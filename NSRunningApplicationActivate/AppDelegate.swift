@@ -45,7 +45,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 // BEGIN IMPORTANT PART
                 //
 
-                app.activate(options: [.activateAllWindows, .activateIgnoringOtherApps])
+                let ok = app.activate(options: [.activateAllWindows, .activateIgnoringOtherApps])
+                
+                if !ok {
+                    let alert = NSAlert()
+                    alert.messageText = "NSRunningApplication activate() failed!"
+                    alert.informativeText = "This sucks."
+                    alert.alertStyle = .critical
+                    alert.runModal()
+                }
 
                 //
                 // END IMPORTANT PART
