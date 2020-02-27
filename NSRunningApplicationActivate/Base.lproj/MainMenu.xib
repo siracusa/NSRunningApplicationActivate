@@ -709,7 +709,7 @@ activate(options: [.activateAllWindows, .activateIgnoringOtherApps])</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" selectable="YES" id="1YJ-5x-BRn">
                             <font key="font" metaFont="system"/>
-                            <string key="title">Expected results: as per the documentation, Outlook is actibvated and ALL of its windows are brought forward.
+                            <string key="title">Expected results: as per the documentation, Outlook is activated and ALL of its windows are brought forward.
 
 Actual results: a SINGLE Outlook window is brought forward.</string>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
